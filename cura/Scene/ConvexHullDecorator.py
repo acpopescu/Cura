@@ -410,8 +410,10 @@ class ConvexHullDecorator(SceneNodeDecorator):
 
         # Horizontal expansion.
         horizontal_expansion = max(
-            self._getSettingProperty("xy_offset", "value"),
-            self._getSettingProperty("xy_offset_layer_0", "value")
+            self._getSettingProperty("xy_offset_x", "value"),
+            self._getSettingProperty("xy_offset_y", "value"),
+            self._getSettingProperty("xy_offset_layer_0_x", "value"),
+            self._getSettingProperty("xy_offset_layer_0_y", "value")
         )
 
         # Mold.
@@ -498,7 +500,7 @@ class ConvexHullDecorator(SceneNodeDecorator):
         "adhesion_type", "raft_margin", "print_sequence",
         "skirt_gap", "skirt_line_count", "skirt_brim_line_width", "skirt_distance", "brim_line_count"]
 
-    _influencing_settings = {"xy_offset", "xy_offset_layer_0", "mold_enabled", "mold_width", "anti_overhang_mesh", "infill_mesh", "cutting_mesh", "material_shrinkage_percentage_xy"}
+    _influencing_settings = {"xy_offset_x", "xy_offset_y", "xy_offset_layer_0_x", "xy_offset_layer_0_y", "mold_enabled", "mold_width", "anti_overhang_mesh", "infill_mesh", "cutting_mesh", "material_shrinkage_percentage_xy"}
     """Settings that change the convex hull.
 
     If these settings change, the convex hull should be recalculated.

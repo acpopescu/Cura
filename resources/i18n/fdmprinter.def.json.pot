@@ -1296,25 +1296,63 @@ msgid ""
 msgstr ""
 
 #: /fdmprinter.def.json
-msgctxt "xy_offset label"
-msgid "Horizontal Expansion"
+msgctxt "xy_offset_x label"
+msgid "Horizontal Expansion X"
 msgstr ""
 
 #: /fdmprinter.def.json
-msgctxt "xy_offset description"
+msgctxt "xy_offset_x description"
 msgid ""
-"Amount of offset applied to all polygons in each layer. Positive values can "
+"Amount of X offset applied to all polygons in each layer. Positive values can "
 "compensate for too big holes; negative values can compensate for too small "
 "holes."
 msgstr ""
 
 #: /fdmprinter.def.json
-msgctxt "xy_offset_layer_0 label"
+msgctxt "xy_offset_layer_0_x label"
+msgid "Initial Layer Horizontal Expansion X"
+msgstr ""
+
+#: /fdmprinter.def.json
+msgctxt "xy_offset_layer_0_x description"
+msgid ""
+"Amount of offset X applied to all polygons in the first layer. A negative "
+"value can compensate for squishing of the first layer known as \"elephant's "
+"foot\"."
+msgstr ""
+
+#: /fdmprinter.def.json
+msgctxt "hole_xy_offset_x label"
+msgid "Hole Horizontal Expansion X"
+msgstr ""
+
+#: /fdmprinter.def.json
+msgctxt "hole_xy_offset_x description X"
+msgid ""
+"Amount of offset X applied to all holes in each layer. Positive values "
+"increase the size of the holes, negative values reduce the size of the holes."
+msgstr ""
+
+#: /fdmprinter.def.json
+msgctxt "xy_offset_y label"
+msgid "Horizontal Expansion Y"
+msgstr ""
+
+#: /fdmprinter.def.json
+msgctxt "xy_offset_y description"
+msgid ""
+"Amount of offset Y applied to all polygons in each layer. Positive values can "
+"compensate for too big holes; negative values can compensate for too small "
+"holes."
+msgstr ""
+
+#: /fdmprinter.def.json
+msgctxt "xy_offset_layer_0_y label"
 msgid "Initial Layer Horizontal Expansion"
 msgstr ""
 
 #: /fdmprinter.def.json
-msgctxt "xy_offset_layer_0 description"
+msgctxt "xy_offset_layer_0_y description"
 msgid ""
 "Amount of offset applied to all polygons in the first layer. A negative "
 "value can compensate for squishing of the first layer known as \"elephant's "
@@ -1322,14 +1360,14 @@ msgid ""
 msgstr ""
 
 #: /fdmprinter.def.json
-msgctxt "hole_xy_offset label"
-msgid "Hole Horizontal Expansion"
+msgctxt "hole_xy_offset_y label"
+msgid "Hole Horizontal Expansion Y"
 msgstr ""
 
 #: /fdmprinter.def.json
-msgctxt "hole_xy_offset description"
+msgctxt "hole_xy_offset_y description"
 msgid ""
-"Amount of offset applied to all holes in each layer. Positive values "
+"Amount of offset Y applied to all holes in each layer. Positive values "
 "increase the size of the holes, negative values reduce the size of the holes."
 msgstr ""
 
