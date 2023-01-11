@@ -410,10 +410,8 @@ class ConvexHullDecorator(SceneNodeDecorator):
 
         # Horizontal expansion.
         horizontal_expansion = max(
-            self._getSettingProperty("xy_offset_x", "value"),
-            self._getSettingProperty("xy_offset_y", "value"),
-            self._getSettingProperty("xy_offset_layer_0_x", "value"),
-            self._getSettingProperty("xy_offset_layer_0_y", "value")
+            max(self._getSettingProperty("xy_offset_x", "value"),self._getSettingProperty("xy_offset_y", "value")),
+            max(self._getSettingProperty("xy_offset_layer_0_x", "value"),self._getSettingProperty("xy_offset_layer_0_y", "value"))
         )
 
         # Mold.

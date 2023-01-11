@@ -13,6 +13,7 @@
 "5.3.0-alpha":
     requirements:
         - "pyarcus/5.2.2"
+        - "clipper/6.4.3"
         - "curaengine/(latest)@ultimaker/testing"
         - "pysavitar/5.2.2"
         - "pynest2d/5.2.2"
